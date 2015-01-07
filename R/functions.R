@@ -73,6 +73,8 @@ first.occ <- function(x){
 #' @param x vector
 #' @keywords coefficient of variation
 #' @export
-CV <- function(mean, sd){
+CV <- function(x){
+  mu <- base::mean(x)
+  sd <- base::sd(x)
   (sd/mean)*100
 }
