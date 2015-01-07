@@ -1,0 +1,18 @@
+Package: crushingr
+Title: Crushings personal R package
+Version: 0.1
+Authors@R: as.person('Clark Rushing <crushing05@gmail.com> [aut, cre]')
+Description: Loads commonly used packages, sets default ggplot2 theme, adds custom
+	functions
+Depends: R (>= 3.1.2),
+    dplyr,
+    ggplot2,
+    grid,
+    lme4,
+    maptools,
+    scales,
+    tidyr,
+    rjags
+License: What license is it under?
+LazyData: true
+Imports: broom
