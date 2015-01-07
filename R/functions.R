@@ -65,3 +65,13 @@ first.occ <- function(x){
   index <- !duplicated(x)
   return(seq_along(x)[index])
 }
+
+#' Coefficient of variation
+#'
+#' Compute coefficient ((sd/mean)*100) of variation of a vector;
+#' @param x vector
+#' @keywords coefficient of variation
+#' @export
+CV <- function(mean, sd){
+  (sd/mean)*100
+}
