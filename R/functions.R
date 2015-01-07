@@ -75,6 +75,6 @@ first.occ <- function(x){
 #' @export
 coeff.var <- function(x){
   mu <- base::mean(x)
-  sd <- base::sd(x)
-  (sd/mean)*100
+  st.dev <- sd(x)
+  (st.dev/mu)
 }
