@@ -52,3 +52,16 @@ mean <- function(x) {
 #' @export
 
 invlogit <- function(x){exp(x)/(1+exp(x))}
+
+#' First occurrence
+#'
+#' Index of the first occurrence of unique values from a vector
+#' @param x vector
+#' @keywords occurrence
+#' @export
+
+
+first.occ <- function(x){
+  index <- !duplicated(x)
+  return(seq_along(x)[index])
+}
