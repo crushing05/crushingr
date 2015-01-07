@@ -15,4 +15,5 @@ Depends: R (>= 3.1.2),
     rjags
 License: What license is it under?
 LazyData: true
-Imports: broom
+Imports: broom,
+    R2jags
