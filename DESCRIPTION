@@ -13,7 +13,7 @@ Depends: R (>= 3.1.2),
     scales,
     tidyr,
     rjags,
-    R2jags
+    R2jags,
+    broom
 License: What license is it under?
 LazyData: true
-Imports: broom
