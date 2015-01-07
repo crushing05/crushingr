@@ -12,8 +12,8 @@ Depends: R (>= 3.1.2),
     maptools,
     scales,
     tidyr,
-    rjags
+    rjags,
+    R2jags
 License: What license is it under?
 LazyData: true
-Imports: broom,
-    R2jags
+Imports: broom
