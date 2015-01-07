@@ -24,7 +24,7 @@ se <- function(x){
 
 mean <- function(x) {
   mu <- base::mean(x, na.rm=TRUE)
-  mu3 <- print(mu, digits=3)
+  mu3 <- return(mu, digits=3)
 }
 
 #' %out%
