@@ -4,7 +4,7 @@ Version: 0.1
 Authors@R: as.person('Clark Rushing <crushing05@gmail.com> [aut, cre]')
 Description: Loads commonly used packages, sets default ggplot2 theme, adds custom
 	functions
-Depends: R (>= 3.1.2),
+Depends: R,
     dplyr,
     ggplot2,
     grid,
