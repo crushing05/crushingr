@@ -11,14 +11,15 @@
                                         colour = "black", size = base_size,
                                         hjust = 0.5, vjust = 0.5, angle = 0, lineheight = 0.9),
       axis.text =          element_text(size = rel(0.8), colour = "grey50"),
+      axis.title=          element_text(colour = "grey30"),
       strip.text =         element_text(size = rel(0.8)),
 
       axis.line =          element_line(size=.7, color = "black"),
-      axis.text.x =        element_text(size = base_size , lineheight = 0.9, vjust = 1),
-      axis.text.y =        element_text(size = base_size, lineheight = 0.9, hjust = 1.2),
+      axis.text.x =        element_text(size = base_size*1.4 , lineheight = 0.9, vjust = 1),
+      axis.text.y =        element_text(size = base_size*1.4, lineheight = 0.9, hjust = 1.2),
       axis.ticks =         element_line(colour = "black", size = 0.2),
-      axis.title.x =       element_text(size = base_size*1.4, vjust = 0.3),
-      axis.title.y =       element_text(size = base_size*1.4, angle = 90, vjust = 1),
+      axis.title.x =       element_text(size = base_size*1.7, vjust = 0.3),
+      axis.title.y =       element_text(size = base_size*1.7, angle = 90, vjust = 1),
       axis.ticks.length =  grid::unit(0.3, "lines"),
       axis.ticks.margin =  grid::unit(0.5, "lines"),
 
@@ -39,7 +40,7 @@
 
       panel.background =   element_rect(fill = "white", colour = NA),
       panel.border =       element_rect(fill=NA, color="grey80",size=.5),
-      panel.grid.major =   element_line(colour = "grey90", size = 0.2),
+      panel.grid.major =   element_blank(),
       panel.grid.minor =   element_blank(),
       panel.margin =       grid::unit(0.25, "lines"),
       panel.margin.x =     NULL,
@@ -57,4 +58,6 @@
     )
   }
   theme_set(theme_clark())
+  update_geom_defaults("point", list(size=4))
+  update_geom_defaults("line", list(size=0.8))
 }
