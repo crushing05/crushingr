@@ -17,4 +17,5 @@ Depends: R,
     broom
 License: What license is it under?
 LazyData: true
-Imports: ggthemes
+Imports: ggthemes,
+    magrittr
