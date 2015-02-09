@@ -1,4 +1,5 @@
 .onLoad <- function(libname="crushingr", pkgname="crushingr"){
+  options(digits=4)
   library(ggplot2)
   theme_clark <- function(base_size = 12, base_family = "") {
     theme(

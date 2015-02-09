@@ -12,22 +12,6 @@ se <- function(x){
   sd(x)/sqrt(length(x))
 }
 
-#' Mean
-#'
-#' Same as base mean, but defaults to printing 3 digits
-#' @param x Numeric vector
-#' @keywords mean
-#' @export
-#' @examples
-#' x <- rnorm(100)
-#' mean(x)
-
-mean <- function(x) {
-  mu <- base::mean(x, na.rm=TRUE)
-  mu3 <- round(mu, digits=3)
-  return(mu3)
-}
-
 #' %out%
 #'
 #' Reverse of %in% - determine whether values are not in a vector
