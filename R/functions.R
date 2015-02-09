@@ -78,3 +78,15 @@ coeff.var <- function(x){
   st.dev <- sd(x)
   (st.dev/mu)
 }
+
+#' Read csv lowercase
+#'
+#' Modification of read.csv to automatically convert column names to all lowercase
+#' @param file filename of .csv file
+#' @keywords read; csv
+#' @export
+read.csvl <- function(file){
+  df <- read.csv(file)
+  colnames(df) <- tolower(colnames(df))
+  return(df)
+}

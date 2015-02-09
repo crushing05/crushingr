@@ -14,8 +14,8 @@ Depends: R,
     tidyr,
     rjags,
     R2jags,
-    broom
+    broom,
+    ggthemes,
+    magrittr
 License: What license is it under?
 LazyData: true
-Imports: ggthemes,
-    magrittr
