@@ -59,7 +59,7 @@
     )
   }
   theme_set(theme_clark())
-  scale_colour_discrete <- ggthemes::scale_color_solarized
+  scale_colour_discrete <- function(...) ggthemes::scale_color_solarized()
   update_geom_defaults("point", list(size=4))
   update_geom_defaults("line", list(size=0.8))
 }
