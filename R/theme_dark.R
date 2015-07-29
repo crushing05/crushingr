@@ -1,5 +1,5 @@
 theme_dark <- function(base_size = 12, base_family = "") {
-  theme(
+  ggplot2::theme(
     # Elements in this first block aren't used directly, but are inherited
     # by others
     line =               element_line(colour = "#cb4b16", size = 0.5, linetype = 1,
