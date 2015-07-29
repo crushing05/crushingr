@@ -19,7 +19,7 @@ theme_dark <- function(base_size = 12, base_family = "") {
     axis.title=          element_text(colour = "#93a1a1", vjust=0.35),
     strip.text =         element_text(size = rel(0.8)),
 
-    axis.line =          element_line(size=.7, color = "#657b83"),
+    axis.line =          element_line(size=.7, color = "#586e75"),
     axis.text.x =        element_text(size = base_size*1.4 , lineheight = 0.9),
     axis.text.y =        element_text(size = base_size*1.4, lineheight = 0.9),
     axis.ticks =         element_line(colour = "#657b83", size = 0.2),
