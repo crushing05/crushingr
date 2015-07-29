@@ -13,7 +13,7 @@ theme_dark <- function(base_size = 12, base_family = "") {
                                       lineend = "butt"),
     rect =               element_rect(fill = "white", colour = "black", size = 0.5, linetype = 1),
     text =               element_text(family = base_family, face = "plain",
-                                      colour = "#93a1a1", size = base_size,
+                                      colour = "#839496", size = base_size,
                                       hjust = 0.5, vjust = 0.5, angle = 0, lineheight = 0.9),
     axis.text =          element_text(size = rel(0.8), colour = "grey50"),
     axis.title=          element_text(colour = "#93a1a1", vjust=0.35),
