@@ -63,7 +63,3 @@ theme_light <- function(base_size = 12, base_family = "") {
   )
 }
 
-require(ggplot2)
-df <- data.frame(x = seq(1:10), y = seq(1:10))
-
-ggplot(df, aes(x =x, y = y)) + geom_point()+theme_light()
