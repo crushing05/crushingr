@@ -5,7 +5,7 @@
 #' @keywords theme
 #' @export
 
-theme_dark <- function(base_size = 12, base_family = "") {
+theme_light <- function(base_size = 12, base_family = "") {
   ggplot2::theme(
     # Elements in this first block aren't used directly, but are inherited
     # by others
