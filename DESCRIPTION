@@ -13,7 +13,7 @@ Depends: R,
     scales,
     tidyr,
     rjags,
-    R2jags,
+    jagsUI,
     broom,
     ggthemes,
     magrittr
