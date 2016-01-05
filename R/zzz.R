@@ -28,7 +28,6 @@
       axis.title.y =       element_text(size = base_size*1.7, angle = 90, vjust = 1,
                                         margin = margin(r = 0.8 * half_line, l = 0.8 * half_line/2)),
       axis.ticks.length =  grid::unit(0.3, "lines"),
-      #axis.ticks.margin =  grid::unit(0.5, "lines"),
 
       legend.background =  element_rect(colour = NA),
       legend.margin =      grid::unit(0.2, "cm"),
