@@ -52,7 +52,7 @@ theme_light <- function(base_size = 12, base_family = "") {
     panel.border =       element_blank(),
     panel.grid.major =   element_blank(),
     panel.grid.minor =   element_blank(),
-    panel.margin =       grid::unit(0.25, "lines"),
+    panel.margin =       grid::unit(half_line, "pt"),
     panel.margin.x =     NULL,
     panel.margin.y =     NULL,
 
