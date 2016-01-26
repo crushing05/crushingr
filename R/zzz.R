@@ -6,26 +6,26 @@
     theme(
       # Elements in this first block aren't used directly, but are inherited
       # by others
-      line =               element_line(colour = "black", size = 0.5, linetype = 1,
+      line =               element_line(size = 0.5, linetype = 1, colour = "black",
                                         lineend = "butt"),
       rect =               element_rect(fill = "white", colour = "black", size = 0.5, linetype = 1),
-      text =               element_text(family = base_family, face = "plain",
-                                        colour = "black", size = base_size,
+      text =               element_text(family = base_family, face = "plain", colour = "black",
+                                        size = base_size,
                                         hjust = 0.5, vjust = 0.5, angle = 0, lineheight = 0.9, margin = margin(),
                                         debug = FALSE),
-      axis.text =          element_text(size = rel(0.8), colour = "grey30"),
-      axis.title=          element_text(colour = "grey10", vjust=0.35),
+      axis.text =          element_text(size = rel(0.8), colour = "grey40"),
+      axis.title=          element_text(size = rel(0.8), colour = "grey40", vjust=0.35),
       strip.text =         element_text(size = rel(0.8)),
 
-      axis.line =          element_line(size=.7, color = "black"),
-      axis.text.x =        element_text(size = base_size*1.4 , lineheight = 0.9,
+      axis.line =          element_line(size=.7, color = "grey60"),
+      axis.text.x =        element_text(size = base_size*1.1, lineheight = 0.9,
                                         margin = margin(t = 0.8 * half_line/2), vjust = 1),
-      axis.text.y =        element_text(size = base_size*1.4, lineheight = 0.9,
+      axis.text.y =        element_text(size = base_size*1.1, lineheight = 0.9,
                                         margin = margin(r = 0.8 * half_line/2), vjust = 0.5),
-      axis.ticks =         element_line(colour = "black", size = 0.2),
-      axis.title.x =       element_text(size = base_size*1.7, vjust = 0.3,
+      axis.ticks =         element_line(colour = "grey60", size = 0.2),
+      axis.title.x =       element_text(size = base_size*1.4, vjust = 0.3,
                                         margin = margin(t = 10, b = 0.8 * half_line/2)),
-      axis.title.y =       element_text(size = base_size*1.7, angle = 90, vjust = 1,
+      axis.title.y =       element_text(size = base_size*1.4, angle = 90, vjust = 1,
                                         margin = margin(r = 10, l = 0.8 * half_line/2)),
       axis.ticks.length =  grid::unit(0.3, "lines"),
 
@@ -69,6 +69,6 @@
 
   theme_set(theme_clark())
   scale_colour_discrete <- function(...) ggthemes::scale_color_solarized()
-  update_geom_defaults("point", list(size=4))
-  update_geom_defaults("line", list(size=0.8))
+  update_geom_defaults("point", list(size = 3))
+  update_geom_defaults("line", list(size = 0.8))
 }
