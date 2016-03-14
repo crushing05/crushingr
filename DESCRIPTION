@@ -5,16 +5,16 @@ Authors@R: as.person('Clark Rushing <crushing05@gmail.com> [aut, cre]')
 Description: Loads commonly used packages, sets default ggplot2 theme, adds custom
 	functions
 Depends: R,
+    broom,
     dplyr,
     ggplot2,
+    ggthemes,
     grid,
+    jagsUI,
+    magrittr,
     maptools,
     scales,
-    tidyr,
-    rjags,
-    jagsUI,
-    broom,
-    ggthemes,
-    magrittr
+    tidyr
+Suggests: rjags
 License: What license is it under?
 LazyData: true
