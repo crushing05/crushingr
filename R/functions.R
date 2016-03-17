@@ -113,3 +113,20 @@ to_pdf <- function(expr, filename, ...)
 #' @export
 to_png <- function(expr, filename, ...)
   to_dev(expr, png, filename)
+
+#' Zero-truncated poisson distribution
+#'
+#' Generates random variables from zero-truncated poisson distribution
+#' @param n Number of random values to return
+#' @param lambda vector of (non-negative) means
+#' @keywords poisson
+#' @export
+
+rpoisson0 <- function(n, lambda){
+  U <- runif(n)   # the uniform sample
+  t <- -log(1 - U*(1 - exp(-lambda))) # the "first" event-times
+  T1 <- (lambda - t)   # the set of (T-t)
+
+  X <- rpois(n, T1) + 1 # the final truncated Poisson sample
+  return(X)
+}
